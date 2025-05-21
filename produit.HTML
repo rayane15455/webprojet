@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élégance Parfumée - Nos Produits</title>
+    <link rel="stylesheet" href="css Pages/produit.css">
+    <link rel="icon" href="image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <nav>   
+                
+                <a href="index.html" class="logo">ÉléganceParfumée</a>
+                <ul class="navigation">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="produit.html">Collections</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Rechercher...">
+                        <button id="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <a href="connexion.html" class="nav-icon" aria-label="Connexion"><i class="fas fa-user"></i></a>
+                    <a href="panier.html" class="nav-icon" aria-label="Panier">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="femme">Femme</button>
+            <button class="filter-btn" data-filter="homme">Homme</button>
+            <button class="filter-btn" data-filter="best-seller">Meilleures ventes</button>
+            <button class="filter-btn" data-filter="new">Nouveautés</button>
+        </div>
+           
+        <div class="produits">
+            
+             
+            <div class="produit" data-genre="femme" data-status="all">
+                
+                <img src="image/victtoria.jpg" alt="VICTORIA SECRET" class="produit-image">
+                <div class="produit-content">
+                    <span class="produit-marque">Victoria's Secret</span>
+                    <h3>Bombshell Eau de Parfum</h3>
+                    <p class="produit-desc">Un parfum floral-fruité explosif avec des notes de pamplemousse, orchidée et vanille.</p>
+                    <div class="prix-container">
+                        <div>
+                            <span class="ancien-prix">7500DA</span>
+                            <span class="prix">6000DA</span>
+                        </div>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+                    <div class="quantity-container">
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+                  <div class="produit" data-genre="homme" data-status="best-seller">
+                    <span class="produit-badge"> best-seller</span>
+    <img src="image/gucci-guilty-pour-homme-eau-de-toilette.jpg" alt="Gucci Guilty Pour Homme" class="produit-image">
+    <div class="produit-content">
+        <span class="produit-marque">Gucci</span>
+        <h3>Guilty Pour Homme</h3>
+        <p class="produit-desc">Une fragrance masculine, chaleureuse et sensuelle aux notes de lavande, citron, patchouli et bois de cèdre.</p>
+        <div class="prix-container">
+            <span class="prix">15000DA</span>
+            <div class="rating">★★★★☆</div>
+        </div>
+        <div class="quantity-container">
+            <div class="quantity-controls">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+</div>
+
+            
+             <div class="produit" data-genre="homme" data-status="new">
+                <span class="produit-badge">Nouveau</span>
+                   <img src="image/aqua dell alba.jpg" alt="Aqua dell'Alpa" class="produit-image">
+                   <div class="produit-content">
+                        <span class="produit-marque">Aqua dell'Alpa</span>
+                        <h3>Eau de Parfum</h3>
+                        <p class="produit-desc">Un parfum frais et vibrant, aux notes marines, agrumes et bois flotté.</p>
+                        <div class="prix-container">
+                             <span class="prix">6900DA</span>
+                                <div class="rating">★★★★☆</div>
+                        </div>
+                        <div class="quantity-container">
+                                <div class="quantity-controls">
+                                    <button class="quantity-btn minus">-</button>
+                                     <input type="number" class="quantity-input" value="1" min="1">
+                                    <button class="quantity-btn plus">+</button>
+                               </div>
+                             <button class="add-to-cart">Ajouter au panier</button>
+                        </div>
+                      </div>
+                    </div>
+
+            <div class="produit" data-genre="femme" data-status="best-seller">
+                <span class="produit-badge">Best-seller</span>
+                <img src="image/kayali vanilla.jpg" alt="KAYALI" class="produit-image">
+                <div class="produit-content">
+                    <span class="produit-marque">Kay Ali</span>
+                    <h3>Vanilla 28</h3>
+                    <p class="produit-desc">Un parfum gourmand luxueux avec des notes de vanille, bois de santal et ambre.</p>
+                    <div class="prix-container">
+                        <div>
+                        <span class="ancien-prix">11000DA</span>
+                        <span class="prix">8900DA</span>
+                        </div>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                    <div class="quantity-container">
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produit" data-genre="femme" data-status="best-seller">
+                <span class="produit-badge">Best-seller</span>
+                <img src="image/Idole lancome.jpg" alt="LANCOME IDOLE" class="produit-image">
+                <div class="produit-content">
+                    <span class="produit-marque">Lancôme</span>
+                    <h3>Idôle</h3>
+                    <p class="produit-desc">Un parfum floral musqué avec des notes de rose, jasmin et musc blanc.</p>
+                    <div class="prix-container">
+                        <span class="prix">7000DA</span>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+                    <div class="quantity-container">
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+                       <div class="produit" data-genre="homme" data-status="best-seller">
+                        <span class="produit-badge">Best-seller</span>
+    <img src="image/tom-ford-noir-extreme-eau-de-parfum.webp" alt="Tom Ford Noir" class="produit-image">
+    <div class="produit-content">
+        <span class="produit-marque">Tom Ford</span>
+        <h3>Noir</h3>
+        <p class="produit-desc">Un parfum élégant et mystérieux aux notes de bergamote, patchouli, vanille et ambre.</p>
+        <div class="prix-container">
+            <span class="prix">12000DA</span>
+            <div class="rating">★★★★★</div>
+        </div>
+        <div class="quantity-container">
+            <div class="quantity-controls">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+</div>
+
+            
+            <div class="produit" data-genre="femme" data-status="new">
+                <span class="produit-badge">Nouveau</span>
+                <img src="image/versace crystal.jpg" alt="Versace Bright Crystal" class="produit-image">
+                <div class="produit-content">
+                    <span class="produit-marque">Versace</span>
+                    <h3>Bright Crystal</h3>
+                    <p class="produit-desc">Un parfum floral solaire et rayonnant, une interprétation plus intense et voluptueuse.</p>
+                    <div class="prix-container">
+                        <span class="prix">5000DA</span>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+                    <div class="quantity-container">
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+                       <div class="produit" data-genre="femme" data-status="all">
+    <img src="image/kayAli.jpg" alt="Kayali The Wedding " class="produit-image">
+    <div class="produit-content">
+        <span class="produit-marque">Kayali</span>
+        <h3>The Wedding </h3>
+        <p class="produit-desc">Une fragrance élégante et romantique aux notes de rose, jasmin, vanille et bois blancs.</p>
+        <div class="prix-container">
+            <div>
+            <span class="ancien-prix">11000DA</span>
+            <span class="prix">8900DA</span>
+            </div>
+            <div class="rating">★★★★★</div>
+        </div>
+        <div class="quantity-container">
+            <div class="quantity-controls">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+</div>
+
+     <div class="produit" data-genre="homme" data-status="all">
+    <img src="image/giorgio armani.jpg" alt="Acqua di Giò Profondo" class="produit-image">
+    <div class="produit-content">
+        <span class="produit-marque">Giorgio Armani</span>
+        <h3>Acqua di Giò Profondo</h3>
+        <p class="produit-desc">Un parfum marin et aromatique, aux notes de bergamote, romarin, patchouli et encens minéral.</p>
+        <div class="prix-container">
+            <span class="prix">9900DA</span>
+            <div class="rating">★★★★★</div>
+        </div>
+        <div class="quantity-container">
+            <div class="quantity-controls">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+</div>
+
+        
+            <div class="produit" data-genre="femme" data-status="all">
+                <img src="image/CHANEL GABRIELLE CHANEL » Eau de Parfum (EdP).jfif" alt="Chanel Gabrielle Essence" class="produit-image">
+                <div class="produit-content">
+                    <span class="produit-marque">Chanel</span>
+                    <h3>Gabrielle Essence</h3>
+                    <p class="produit-desc">Un parfum floral solaire et rayonnant, une interprétation plus intense et voluptueuse.</p>
+                    <div class="prix-container">
+                        <span class="prix">7000DA</span>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+                    <div class="quantity-container">
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div> 
+          <div class="produit" data-genre="homme" data-status="all">
+    <img src="image/interlude-black-iris.jpg" alt="Amouage Interlude Black Iris" class="produit-image">
+    <div class="produit-content">
+        <span class="produit-marque">Amouage</span>
+        <h3>Interlude Black Iris</h3>
+        <p class="produit-desc">Une fragrance intense et mystérieuse aux notes d'encens, iris, cuir, bois fumés et ambre.</p>
+        <div class="prix-container">
+            <span class="prix">19500DA</span>
+            <div class="rating">★★★★★</div>
+        </div>
+        <div class="quantity-container">
+            <div class="quantity-controls">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+</div>
+
+    
+            <div class="produit" data-genre="femme" data-status="all">
+                <img src="image/Christian Dior Miss Blooming Bouquet Eau de Toilette Spray for Women, 1_7 Ounce.jfif" alt="Miss Dior Blooming" class="produit-image">
+                <div class="produit-content">
+                    <span class="produit-marque">Dior</span>
+                    <h3>Miss Dior Blooming</h3>
+                    <p class="produit-desc">Un parfum floral frais et pétillant, évoquant un bouquet de fleurs printanières délicates et joyeuses.</p>
+                    <div class="prix-container">
+                        <span class="prix">4700DA</span>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+                    <div class="quantity-container">
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="produit" data-genre="femme" data-status="best-seller">
+                <span class="produit-badge">Best-seller</span>
+                <img src="image/CHANEL Perfume & Fragrance for Men & Women _ CHANEL _ CHANEL.jfif" alt="Chanel N°5" class="produit-image">
+                <div class="produit-content">
+                    <span class="produit-marque">Chanel</span>
+                    <h3>N°5</h3>
+                    <p class="produit-desc">Un parfum floral aldéhydé moderne et aérien, une réinterprétation plus fraîche et lumineuse du parfum iconique.</p>
+                    <div class="prix-container">
+                        <span class="prix">4000DA</span>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+                    <div class="quantity-container">
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+                     <div class="produit" data-genre="homme" data-status="all">
+    <img src="image/eros-eau-de-toilette.webp" alt="Versace Eros Eau de Parfum" class="produit-image">
+    <div class="produit-content">
+        <span class="produit-marque">Versace</span>
+        <h3>Eros Eau de Parfum</h3>
+        <p class="produit-desc">Une fragrance intense et passionnée avec des notes de menthe, pomme verte, vanille et bois de cèdre.</p>
+        <div class="prix-container">
+            <span class="prix">9500DA</span>
+            <div class="rating">★★★★☆</div>
+        </div>
+        <div class="quantity-container">
+            <div class="quantity-controls">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+</div>
+
+    
+            <div class="produit" data-genre="femme" data-status="all">
+                <img src="image/téléchargement.jfif" alt="Chloé" class="produit-image">
+                <div class="produit-content">
+                    <span class="produit-marque">Chloé</span>
+                    <h3>Chloé</h3>
+                    <p class="produit-desc">Un parfum floral poudré et romantique, caractérisé par son élégante note de rose fraîche et son sillage sophistiqué.</p>
+                    <div class="prix-container">
+                        <span class="prix">7000DA</span>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+                    <div class="quantity-container">
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="produit" data-genre="femme" data-status="new">
+                <span class="produit-badge">Nouveau</span>
+                <img src="image/idole abs.jpg" alt="Lancôme Idôle Rose Peony" class="produit-image">
+                <div class="produit-content">
+                    <span class="produit-marque">Lancôme</span>
+                    <h3>Idôle Rose Peony</h3>
+                    <p class="produit-desc">Un parfum floral fruité et pétillant, une nouvelle variation fraîche et vibrante de la fragrance Idôle.</p>
+                    <div class="prix-container">
+                        <span class="prix">9000DA</span>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+                    <div class="quantity-container">
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="produit" data-genre="femme" data-status="best-seller">
+                <span class="produit-badge">Best-seller</span>
+                <img src="image/la belle vie.jpg" alt="Lancôme La Vie Est Belle" class="produit-image">
+                <div class="produit-content">
+                    <span class="produit-marque">Lancôme</span>
+                    <h3>La Vie Est Belle</h3>
+                    <p class="produit-desc">Un parfum floral fruité gourmand et joyeux, célébrant la beauté de la vie avec ses notes emblématiques.</p>
+                    <div class="prix-container">
+                        <span class="prix">6000DA</span>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+                    <div class="quantity-container">
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+                    <div class="produit" data-genre="femme" data-status="best-seller">
+                        <span class="produit-badge">Best-seller</span>
+    <img src="image/COCO NOIR.jpg" alt="Coco Chanel Noir" class="produit-image">
+    <div class="produit-content">
+        <span class="produit-marque">Chanel</span>
+        <h3>Coco Noir</h3>
+        <p class="produit-desc">Une fragrance sensuelle et sophistiquée avec des notes de rose, patchouli, bois de santal et fève tonka.</p>
+        <div class="prix-container">
+            <div>
+            <span class="ancien-prix">14000DA</span>
+            <span class="prix">11500DA</span>
+            </div>
+            <div class="rating">★★★★★</div>
+        </div>
+        <div class="quantity-container">
+            <div class="quantity-controls">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+</div>
+
+        
+            <div class="produit" data-genre="femme" data-status="all">
+                <img src="image/Narciso Rodriguez All Of Me EDP Intense 90ml.jfif" alt="Narciso Rodriguez For Her" class="produit-image">
+                <div class="produit-content">
+                    <span class="produit-marque">Narciso Rodriguez</span>
+                    <h3>For Her</h3>
+                    <p class="produit-desc">Un parfum floral musqué et sensuel, reconnaissable à son cœur de musc signature enveloppé de notes florales et boisées.</p>
+                    <div class="prix-container">
+                        <span class="prix">9000DA</span>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+                    <div class="quantity-container">
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="produit" data-genre="femme" data-status="all">
+                <img src="image/Chanel Chance Eau Tendre.jpg" alt="Chanel Chance Eau Tendre" class="produit-image">
+                <div class="produit-content">
+                    <span class="produit-marque">Chanel</span>
+                    <h3>Chance Eau Tendre</h3>
+                    <p class="produit-desc">Un parfum floral fruité délicat et pétillant, une vague de tendresse aux notes de pamplemousse, de coing et de jasmin.</p>
+                    <div class="prix-container">
+                        <span class="prix">10000DA</span>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+                    <div class="quantity-container">
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="produit" data-genre="homme" data-status="all">
+    <img src="image/son venin.jpg" alt="Son Venïn - Posthume" class="produit-image">
+    <div class="produit-content">
+        <span class="produit-marque">Son Venïn</span>
+        <h3>Posthume</h3>
+        <p class="produit-desc">Un parfum énigmatique et artistique, mêlant encens, cuir et nuances florales sombres.</p>
+        <div class="prix-container">
+            <span class="prix">9500DA</span>
+            <div class="rating">★★★★☆</div>
+        </div>
+        <div class="quantity-container">
+            <div class="quantity-controls">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+</div>
+
+            
+            <div class="produit" data-genre="femme" data-status="all">
+                <img src="image/térre de lum.jfif" alt="L'Occitane Terre de Lumière" class="produit-image">
+                <div class="produit-content">
+                    <span class="produit-marque">L'Occitane</span>
+                    <h3>Terre de Lumière</h3>
+                    <p class="produit-desc">Un parfum floral aromatique et gourmand, capturant la magie de la lumière dorée de la Provence avec des notes de lavande, de miel et d'amande.</p>
+                    <div class="prix-container">
+                        <span class="prix">7000DA</span>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+                    <div class="quantity-container">
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+                   <div class="produit" data-genre="homme" data-status="all">
+    <img src="image/lhomme-lacoste-timeless-eau-de-toilette.jpg" alt="Lacoste L'Homme Timeless" class="produit-image">
+    <div class="produit-content">
+        <span class="produit-marque">Lacoste</span>
+        <h3>L'Homme Timeless</h3>
+        <p class="produit-desc">Un parfum élégant et frais avec des notes de bergamote, cardamome, gingembre et bois de santal.</p>
+        <div class="prix-container">
+            <span class="prix">6900DA</span>
+            <div class="rating">★★★★☆</div>
+        </div>
+        <div class="quantity-container">
+            <div class="quantity-controls">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+</div>
+
+        
+            <div class="produit" data-genre="femme" data-status="all">
+                <img src="image/Chanel Chance Eau Splendide.jpg" alt="Chanel Chance Eau Splendide" class="produit-image">
+                <div class="produit-content">
+                    <span class="produit-marque">Chanel</span>
+                    <h3>Chance Eau Splendide</h3>
+                    <p class="produit-desc">Un parfum floral frais et pétillant, une explosion de fraîcheur et de luminosité.</p>
+                    <div class="prix-container">
+                        <span class="prix">7000DA</span>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+                    <div class="quantity-container">
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+                 <div class="produit" data-genre="homme" data-status="new">
+                    <span class="produit-badge">Nouveau</span>
+    <img src="image/BNZ000002.jpg" alt="Mercedes-Benz AMG Silver Thrill" class="produit-image">
+    <div class="produit-content">
+        <span class="produit-marque">Mercedes-Benz</span>
+        <h3>AMG Silver Thrill</h3>
+        <p class="produit-desc">Un parfum audacieux et vibrant, alliant fraîcheur métallique, notes boisées et touches épicées.</p>
+        <div class="prix-container">
+            <span class="prix">8900DA</span>
+            <div class="rating">★★★★☆</div>
+        </div>
+        <div class="quantity-container">
+            <div class="quantity-controls">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+</div>
+
+    
+            <div class="produit" data-genre="femme" data-status="all">
+                <img src="image/coco.jfif" alt="Coco Mademoiselle de Chanel" class="produit-image">
+                <div class="produit-content">
+                    <span class="produit-marque">Chanel</span>
+                    <h3>Coco Mademoiselle</h3>
+                    <p class="produit-desc">Un parfum oriental frais et élégant, incarnant l'esprit d'une femme libre et audacieuse.</p>
+                    <div class="prix-container">
+                        <div>
+                        <span class="ancien-prix">14000DA</span>
+                        <span class="prix">11500DA</span>
+                        </div>
+                        <div class="rating">★★★★☆</div>
+                    </div>
+                    <div class="quantity-container">
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="produit" data-genre="homme" data-status="best-seller">
+                <span class="produit-badge">Best-seller</span>
+                <img src="image/SAUVAGE.jpg" alt="DIOR SAUVAGE" class="produit-image">
+                <div class="produit-content">
+                    <span class="produit-marque">Dior</span>
+                    <h3>Sauvage</h3>
+                    <p class="produit-desc">Un parfum frais et épicé avec des notes de bergamote, poivre et bois d'ambroxan.</p>
+                    <div class="prix-container">
+                        <div>
+                        <span class="ancien-prix">12000DA</span>
+                        <span class="prix">9900DA</span>
+                    </div>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                    <div class="quantity-container">
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+                         <div class="produit" data-genre="femme" data-status="all">
+    <img src="image/KAYALI LOVEFEST.jpg" alt="Kayali Lovefest" class="produit-image">
+    <div class="produit-content">
+        <span class="produit-marque">Kayali</span>
+        <h3>Lovefest</h3>
+        <p class="produit-desc">Un parfum chaleureux et envoûtant aux notes de cerise noire, praline brûlée et bois de palo santo.</p>
+        <div class="prix-container">
+            <div>
+            <span class="ancien-prix">11000DA</span>
+            <span class="prix">8900DA</span>
+            </div>
+            <div class="rating">★★★★★</div>
+        </div>
+        <div class="quantity-container">
+            <div class="quantity-controls">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+</div>
+
+        
+            <div class="produit" data-genre="homme" data-status="new">
+                <span class="produit-badge"> Nouveau</span>
+                 <img src="image/bleu chanel.jfif" alt="CHANEL BLEU" class="produit-image">
+                <div class="produit-content">
+                      <span class="produit-marque">Chanel</span>
+                   <h3>Bleu de Chanel</h3>
+                   <p class="produit-desc">Un parfum boisé aromatique avec des notes d'agrumes, menthe et cèdre.</p>
+                 <div class="prix-container">
+                       <span class="prix">9500DA</span>
+                    <div class="rating">★★★★☆</div>
+                </div>
+                    <div class="quantity-container">
+                       <div class="quantity-controls">
+                           <button class="quantity-btn minus">-</button>
+                           <input type="number" class="quantity-input" value="1" min="1">
+                           <button class="quantity-btn plus">+</button>
+                </div>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                            </div>
+     </div>
+           </div>
+           <div class="produit" data-genre="femme" data-status="all">
+    <img src="image/VICTORIA SECRET TEASE.jpg" alt="Victoria's Secret Tease Candy Noir" class="produit-image">
+    <div class="produit-content">
+        <span class="produit-marque">Victoria's Secret</span>
+        <h3>Tease Candy Noir</h3>
+        <p class="produit-desc">Une fragrance audacieusement sucrée avec des notes de framboise, iris et fève tonka sombre.</p>
+        <div class="prix-container">
+            <span class="prix">7600DA</span>
+            <div class="rating">★★★★☆</div>
+        </div>
+        <div class="quantity-container">
+            <div class="quantity-controls">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="quantity-btn plus">+</button>
+            </div>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+</div>
+
+                   
+        <div class="produit" data-genre="homme" data-status="all">
+            <img src="image/Hermès Parfum.jpg" alt="HERMES TERRE" class="produit-image">
+            <div class="produit-content">
+                <span class="produit-marque">Hermès</span>
+                <h3>Terre d'Hermès</h3>
+                <p class="produit-desc">Un parfum boisé minéral avec des notes de pamplemousse, poivre et vétiver.</p>
+                <div class="prix-container">
+                    <span class="prix">9000DA</span>
+                    <div class="rating">★★★★★</div>
+                </div>
+                <div class="quantity-container">
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="produit" data-genre="homme" data-status="all">
+            <img src="image/Narciso Rodríguez For Him Bleu Noir Eau de parfum 50 ml.jfif" alt="Narciso Rodriguez Bleu Noir" class="produit-image">
+            <div class="produit-content">
+                <span class="produit-marque">Narciso Rodriguez</span>
+                <h3>Bleu Noir</h3>
+                <p class="produit-desc">Un parfum boisépicé avec des notes de cardamome, musc et bois de cèdre.</p>
+                <div class="prix-container">
+                    <span class="prix">7500DA</span>
+                    <div class="rating">★★★★☆</div>
+                </div>
+                <div class="quantity-container">
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produit 20 - Homme -->
+        <div class="produit" data-genre="homme" data-status="best-seller">
+              <span class="produit-badge"> best-seller</span>
+            <img src="image/DIOR.jpg" alt="Dior Homme Intense" class="produit-image">
+            <div class="produit-content">
+                <span class="produit-marque">Dior</span>
+                <h3>Homme Intense</h3>
+                <p class="produit-desc">Un parfum boisé floral avec des notes d'iris, bois de cèdre et vanille.</p>
+                <div class="prix-container">
+                    <span class="prix">8000DA</span>
+                    <div class="rating">★★★★★</div>
+                </div>
+                <div class="quantity-container">
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+
+      
+    
+       
+        <div class="produit" data-genre="homme" data-status="all">
+            <img src="image/bath house.jpg" alt="Bath House Cuban Cedar & Lime" class="produit-image">
+            <div class="produit-content">
+                <span class="produit-marque">Bath House</span>
+                <h3>Cuban Cedar & Lime</h3>
+                <p class="produit-desc">Un parfum frais et boisé avec des notes de citron vert, cèdre et musc.</p>
+                <div class="prix-container">
+                    <span class="prix">6500DA</span>
+                    <div class="rating">★★★★☆</div>
+                </div>
+                <div class="quantity-container">
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="produit" data-genre="homme" data-status="best-seller">
+            <span class="produit-badge">Best-seller</span>
+            <img src="image/Christian_Dior_Homme_Sport__Toaletna_voda_-_Tester__125ml.jpg.jfif" alt="Dior Homme Sport" class="produit-image">
+            <div class="produit-content">
+                <span class="produit-marque">Dior</span>
+                <h3>Homme Sport</h3>
+                <p class="produit-desc">Un parfum frais et épicé avec des notes de citron, gingembre et bois blancs.</p>
+                <div class="prix-container">
+                    <span class="prix">7500DA</span>
+                    <div class="rating">★★★★☆</div>
+                </div>
+                <div class="quantity-container">
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="produit" data-genre="homme" data-status="all">
+            <img src="image/Chanel Allure Homme Edition Blanche Eau De Parfum - 50Ml.jfif" alt="Chanel Allure Homme Sport" class="produit-image">
+            <div class="produit-content">
+                <span class="produit-marque">Chanel</span>
+                <h3>Allure Homme Sport</h3>
+                <p class="produit-desc">Un parfum frais et tonique avec des notes d'agrumes, poivre et ambre.</p>
+                <div class="prix-container">
+                    <span class="prix">8500DA</span>
+                    <div class="rating">★★★★★</div>
+                </div>
+                <div class="quantity-container">
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>ÉléganceParfumée</h3>
+                <p>Maison de parfums de luxe depuis 2025</p>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>À propos</h3>
+                <p>Élégance Parfumée : luxe, performance et expérience utilisateur optimisée.</p>
+                <a href="css Pages/apropos.html">En savoir plus</a>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Bd Khaled Khodja, Tizi Ouzou</p>
+                <p>Éléganceparfumée@gmail.com</p>
+                <p>+213 793 56 64 68</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Élégance Parfumée. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    
+    const header = document.getElementById('main-header');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    
+    
+    function addToCart(product) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const existingItem = cart.find(item => item.name === product.name);
+        
+        if (existingItem) {
+            existingItem.quantity += product.quantity;
+        } else {
+            cart.push(product);
+        }
+        
+        localStorage.setItem('cart', JSON.stringify(cart));
+        updateCartCount();
+    }
+
+    
+    function updateCartCount() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+        document.querySelectorAll('.cart-count').forEach(el => {
+            el.textContent = totalItems;
+        });
+    }
+
+    
+    document.querySelectorAll('.quantity-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const input = this.parentNode.querySelector('.quantity-input');
+            let value = parseInt(input.value);
+            
+            if (this.classList.contains('minus') && value > 1) {
+                value--;
+            } else if (this.classList.contains('plus')) {
+                value++;
+            }
+            
+            input.value = value;
+        });
+    });
+
+    
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', function() {
+            const produit = this.closest('.produit');
+            const productData = {
+                name: produit.querySelector('h3').textContent,
+                brand: produit.querySelector('.produit-marque').textContent,
+                price: parseFloat(produit.querySelector('.prix').textContent),
+                quantity: parseInt(produit.querySelector('.quantity-input').value),
+                image: produit.querySelector('.produit-image').src
+            };
+            
+            // Animation de feedback
+            const originalText = this.textContent;
+            this.textContent = 'Ajouté !';
+            this.style.backgroundColor = '#4CAF50';
+            
+            setTimeout(() => {
+                this.textContent = originalText;
+                this.style.backgroundColor = '';
+            }, 2000);
+            
+            
+            addToCart(productData);
+        });
+    });
+
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        updateCartCount();
+        
+    
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                const filter = this.dataset.filter;
+                const produits = document.querySelectorAll('.produit');
+                
+                produits.forEach(produit => {
+                    const genre = produit.dataset.genre;
+                    const status = produit.dataset.status || '';
+                    
+                    if (filter === 'all' || 
+                        (filter === 'femme' && genre === 'femme') || 
+                        (filter === 'homme' && genre === 'homme') || 
+                        (filter === 'best-seller' && status === 'best-seller') || 
+                        (filter === 'new' && status === 'new')) {
+                        produit.style.display = 'flex';
+                    } else {
+                        produit.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+    
+        document.getElementById('search-btn').addEventListener('click', function() {
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            const produits = document.querySelectorAll('.produit');
+            
+            produits.forEach(produit => {
+                const textContent = [
+                    produit.querySelector('h3').textContent,
+                    produit.querySelector('.produit-marque').textContent,
+                    produit.querySelector('.produit-desc').textContent
+                ].join(' ').toLowerCase();
+                
+                produit.style.display = textContent.includes(searchTerm) ? 'flex' : 'none';
+            });
+        });
+    });
+    
+function performSearch() {
+    const searchTerm = document.getElementById('search-input').value.toLowerCase();
+    const produits = document.querySelectorAll('.produit');
+    
+    produits.forEach(produit => {
+        const textContent = [
+            produit.querySelector('h3').textContent,
+            produit.querySelector('.produit-marque').textContent,
+            produit.querySelector('.produit-desc').textContent
+        ].join(' ').toLowerCase();
+        
+        if (searchTerm === '') {
+            
+            const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
+            const genre = produit.dataset.genre;
+            const status = produit.dataset.status || '';
+            
+            if (activeFilter === 'all' || 
+                (activeFilter === 'femme' && genre === 'femme') || 
+                (activeFilter === 'homme' && genre === 'homme') || 
+                (activeFilter === 'best-seller' && status === 'best-seller') || 
+                (activeFilter === 'new' && status === 'new')) {
+                produit.style.display = 'flex';
+            } else {
+                produit.style.display = 'none';
+            }
+        } else {
+            
+            produit.style.display = textContent.includes(searchTerm) ? 'flex' : 'none';
+        }
+    });
+}
+document.getElementById('search-btn').addEventListener('click', performSearch);
+document.getElementById('search-input').addEventListener('input', performSearch);
+document.getElementById('search-input').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        performSearch();
+    }
+});
+</script>
+</body>
+</html>
+

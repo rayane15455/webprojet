@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription Exclusive - Élégance Parfumée</title>
+    <link rel="stylesheet" href="css Pages/connexion.css">
+    <link rel="icon" href="image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <nav>   
+                <a href="index.html" class="logo">ÉléganceParfumée</a>
+                <ul class="navigation">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="produit.html">Collections</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+    <main class="auth-main">
+        <div class="auth-hero">
+            <div class="hero-content">
+                <h2>Votre Signature Olfactive Vous Attend</h2>
+                <p>Accédez à votre compte pour découvrir des fragrances exclusives et des offres réservées à nos membres privilégiés.</p>
+            </div>
+        </div>
+        
+        <div class="auth-form-container">
+            <div class="auth-form-wrapper">
+                <h1 class="auth-title">Connexion</h1>
+                <p class="auth-subtitle">Entrez vos identifiants pour accéder à votre espace personnel</p>
+                
+                <form class="auth-form" id="loginForm">
+                    <div class="form-group">
+                        <label for="email">Adresse email</label>
+                        <input type="email" id="email" class="form-control" placeholder="votre@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password"></label>
+                        <div class="password-container">
+                            <input type="password" id="password" class="form-control" placeholder="Votre mot de passe" required>
+                            <i class="far fa-eye toggle-password" id="togglePassword"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="auth-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Se souvenir de moi</label>
+                        </div>
+                        <a href="oublier.html" class="forgot-password">Mot de passe oublié ?</a>
+                    </div>
+                    
+                    <button type="submit" class="auth-btn">Se connecter</button>
+                    
+                   
+                    
+                    <div class="auth-footer">
+                        <p>Nouveau chez Élégance Parfumée ? <a href="compte.html">Créer un compte</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            const header = document.getElementById('authHeader');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            
+            const togglePassword = document.getElementById('togglePassword');
+            const password = document.getElementById('password');
+            
+            togglePassword.addEventListener('click', function() {
+                const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+                password.setAttribute('type', type);
+                this.classList.toggle('fa-eye-slash');
+            });
+            
+            
+            const loginForm = document.getElementById('loginForm');
+            
+            loginForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const email = document.getElementById('email').value.trim();
+                const password = document.getElementById('password').value.trim();
+                const remember = document.getElementById('remember').checked;
+                
+                
+                if (!email || !password) {
+                    showError('Veuillez remplir tous les champs');
+                    return;
+                }
+                
+                
+                if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                    showError('Veuillez entrer une adresse email valide');
+                    return;
+                }
+                
+                
+                if (password.length < 8) {
+                    showError('Le mot de passe doit contenir au moins 8 caractères');
+                    return;
+                }
+                
+            
+                const submitBtn = loginForm.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Connexion en cours...';
+                submitBtn.disabled = true;
+                
+                
+                setTimeout(() => {
+                
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                    
+                    
+                    window.location.href = 'index.html';
+                }, 2000);
+            });
+            
+            function showError(message) {
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'error-message';
+                errorDiv.style.color = '#d9534f';
+                errorDiv.style.marginBottom = '20px';
+                errorDiv.style.padding = '10px';
+                errorDiv.style.backgroundColor = '#f8d7da';
+                errorDiv.style.borderRadius = '5px';
+                errorDiv.style.borderLeft = '4px solid #d9534f';
+                errorDiv.textContent = message;
+                
+                const form = document.getElementById('loginForm');
+                const existingError = form.querySelector('.error-message');
+                
+                if (existingError) {
+                    form.replaceChild(errorDiv, existingError);
+                } else {
+                    form.insertBefore(errorDiv, form.firstChild);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

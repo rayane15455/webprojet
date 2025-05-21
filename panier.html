@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élégance Parfumée - Panier</title>
+    <link rel="stylesheet" href="css Pages/panier.css">
+    <link rel="icon" href="image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <nav>   
+                <a href="index.html" class="logo">ÉléganceParfumée</a>
+                
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <ul class="navigation">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="produit.html">Collections</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <a href="panier.html" class="cart-icon">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <div class="container">
+            <h1 class="page-title">Votre Panier</h1>
+            
+            <div class="cart-container">
+                <div class="cart-items" id="cart-items-container">
+                    
+                    <div class="empty-cart">
+                        <div class="empty-cart-icon"><i class="fas fa-shopping-cart"></i></div>
+                        <p class="empty-cart-message">Votre panier est vide</p>
+                        <a href="produit.html" class="continue-btn">Continuer vos achats</a>
+                    </div>
+                </div>
+                
+                <div class="cart-summary">
+                    <h3 class="summary-title">Résumé de la commande</h3>
+                    <div class="summary-row">
+                        <span>Sous-total (<span id="item-count">0</span> articles)</span>
+                        <span id="subtotal">0DA</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Livraison</span>
+                        <span>Gratuite</span>
+                    </div>
+                    <div class="summary-row summary-total">
+                        <span>Total</span>
+                        <span id="total">0DA</span>
+                    </div>
+                    <a href="payement .html" class="checkout-btn" id="checkout-btn">
+                        <i class="fas fa-lock"></i> Passer la commande
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ÉléganceParfumée</h3>
+                    <p>Maison de parfums de luxe depuis 2025</p>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>À propos</h3>
+                    <p>Élégance Parfumée : luxe, performance et expérience utilisateur optimisée.</p>
+                    <a href="apropos.html">En savoir plus</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>Bd Khaled Khodja, Tizi Ouzous</p>
+                    <p>Éléganceparfumée@gmail.com</p>
+                    <p>+213 793 56 64 68</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Élégance Parfumée. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    
+        function loadCart() {
+            const cart = localStorage.getItem('cart');
+            return cart ? JSON.parse(cart) : [];
+        }
+    
+        function saveCart(cart) {
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+        }
+    
+        function updateCartCount() {
+            const cart = loadCart();
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            document.getElementById('item-count').textContent = totalItems;
+            document.querySelector('.cart-count').textContent = totalItems;
+        }
+    
+        function displayCartItems() {
+            const cart = loadCart();
+            const cartContainer = document.getElementById('cart-items-container');
+            const itemCountElement = document.getElementById('item-count');
+            const subtotalElement = document.getElementById('subtotal');
+            const totalElement = document.getElementById('total');
+            const checkoutBtn = document.getElementById('checkout-btn');
+            
+            if (cart.length === 0) {
+                cartContainer.innerHTML = `
+                    <div class="empty-cart">
+                        <div class="empty-cart-icon"><i class="fas fa-shopping-cart"></i></div>
+                        <p class="empty-cart-message">Votre panier est vide</p>
+                        <a href="produit.html" class="continue-btn">Continuer vos achats</a>
+                    </div>
+                `;
+                itemCountElement.textContent = '0';
+                subtotalElement.textContent = '0DA';
+                totalElement.textContent = '0DA';
+                checkoutBtn.style.display = 'none';
+                return;
+            } else {
+                checkoutBtn.style.display = 'block';
+            }
+            
+            
+            let html = `
+                <div class="cart-header">
+                    <div>Produit</div>
+                    <div>Quantité</div>
+                    <div>Prix</div>
+                    <div></div>
+                </div>
+            `;
+            
+            let subtotal = 0;
+            
+            cart.forEach((item, index) => {
+                const itemTotal = item.price * item.quantity;
+                subtotal += itemTotal;
+                
+                html += `
+                    <div class="cart-item" data-index="${index}">
+                        <img src="${item.image}" alt="${item.name}" class="item-img">
+                        <div class="item-details">
+                            <h3>${item.name}</h3>
+                            <p>${item.brand}</p>
+                            <span class="remove-item">Supprimer</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn quantity-decrease">-</button>
+                            <input type="number" class="quantity-input" value="${item.quantity}" min="1">
+                            <button class="quantity-btn quantity-increase">+</button>
+                        </div>
+                        <div class="item-price">${itemTotal.toFixed(2)}DA</div>
+                    </div>
+                `;
+            });
+            
+            cartContainer.innerHTML = html;
+            itemCountElement.textContent = cart.reduce((total, item) => total + item.quantity, 0);
+            subtotalElement.textContent = subtotal.toFixed(2) + 'DA';
+            totalElement.textContent = subtotal.toFixed(2) + 'DA';
+            
+            
+            document.querySelectorAll('.quantity-decrease').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const index = this.closest('.cart-item').dataset.index;
+                    updateQuantity(index, -1);
+                });
+            });
+            
+            document.querySelectorAll('.quantity-increase').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const index = this.closest('.cart-item').dataset.index;
+                    updateQuantity(index, 1);
+                });
+            });
+            
+            document.querySelectorAll('.remove-item').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const index = this.closest('.cart-item').dataset.index;
+                    removeItem(index);
+                });
+            });
+            
+            document.querySelectorAll('.quantity-input').forEach(input => {
+                input.addEventListener('change', function() {
+                    const index = this.closest('.cart-item').dataset.index;
+                    const newQuantity = parseInt(this.value);
+                    
+                    if (newQuantity >= 1) {
+                        updateItemQuantity(index, newQuantity);
+                    } else {
+                        this.value = 1;
+                    }
+                });
+            });
+        }
+    
+        function updateQuantity(index, change) {
+            const cart = loadCart();
+            const newQuantity = cart[index].quantity + change;
+            
+            if (newQuantity < 1) return;
+            
+            cart[index].quantity = newQuantity;
+            saveCart(cart);
+            displayCartItems();
+        }
+    
+        function updateItemQuantity(index, newQuantity) {
+            const cart = loadCart();
+            cart[index].quantity = newQuantity;
+            saveCart(cart);
+            displayCartItems();
+        }
+    
+        function removeItem(index) {
+            const cart = loadCart();
+            cart.splice(index, 1);
+            saveCart(cart);
+            displayCartItems();
+        }
+    
+        
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.navigation').classList.toggle('active');
+            this.querySelector('i').classList.toggle('fa-bars');
+            this.querySelector('i').classList.toggle('fa-times');
+        });
+
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = location.pathname.split('/').pop() || 'accueil.html';
+            document.querySelectorAll('.navigation a').forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+
+            displayCartItems();
+            updateCartCount();
+        });
+
+    
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

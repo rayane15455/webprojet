@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ÉléganceParfumée</title>
+    <link rel="stylesheet" href="css Pages/contact.css">
+    <link rel="icon" href="image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">ÉléganceParfumée</a>
+                <ul class="navigation">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="produit.html">Collections</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1>Contactez-nous</h1>
+                <p>Notre équipe est à votre disposition pour répondre à toutes vos questions sur nos parfums de luxe.</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="contact-main">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Informations de contact</h2>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Notre boutique</h3>
+                            <p>Bd Khaled Khodja<br> Tizi Ouzou, Algerie</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Téléphone</h3>
+                            <p><a href="tel:+33123456789">+213 793 56 64 68</a></p>
+                            <p>Samedi au Jeudi - 10h à 19h</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p><a href="mailto:Éléganceparfumée@gmail.com"></a></p>
+                            <p>Réponse sous 24h</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Horaires d'ouverture</h3>
+                            <p>Samedi - Jeudi : 10h - 19h</p>
+                            <p>Vendredi : Fermé</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Envoyez-nous un message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Téléphone (optionnel)</label>
+                            <input type="tel" id="phone" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <select id="subject" class="form-control" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="question">Question sur un produit</option>
+                                <option value="order">Suivi de commande</option>
+                                <option value="return">Retour/Échange</option>
+                                <option value="other">Autre demande</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="faq-section">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 50px;">Questions fréquentes</h2>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Quels sont les délais de livraison ?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Nous expédions les commandes sous 24h ouvrées. Les délais de livraison sont de 2 à 3 jours ouvrés en France métropolitaine avec notre service express. Pour les destinations internationales, comptez 5 à 7 jours ouvrés.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Comment puis-je retourner un produit ?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Vous disposez de 14 jours à réception de votre colis pour effectuer un retour. Contactez notre service client pour obtenir un numéro de retour. Les produits doivent être dans leur emballage d'origine, non utilisés et accompagnés de la facture.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Comment choisir son parfum ?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Notre équipe d'experts est à votre disposition pour vous conseiller par téléphone ou en boutique. Nous proposons également des coffrets découverte et des échantillons gratuits avec chaque commande pour vous aider à trouver le parfum qui vous correspond.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Les parfums sont-ils authentiques ?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolument. Nous travaillons exclusivement avec les marques et leurs distributeurs officiels. Chaque flacon est garanti authentique et bénéficie de la pleine garantie du fabricant.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>ÉléganceParfumée</h3>
+                <p>Maison de parfums de luxe depuis 2025</p>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>À propos</h3>
+                <p>Élégance Parfumée : luxe, performance et expérience utilisateur optimisée.</p>
+                <a href="apropos.html">En savoir plus</a>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Bd Khaled Khodja, Tizi Ouzou</p>
+                <p>Éléganceparfumée@gmail.com</p>
+                <p>+213 793 56 64 68</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Élégance Parfumée. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+    <script>
+    
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentNode;
+                item.classList.toggle('active');
+                
+                const icon = question.querySelector('i');
+                if (item.classList.contains('active')) {
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+        
+        
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            
+            alert('Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

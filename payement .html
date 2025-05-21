@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élégance Parfumée - Paiement</title>
+    <link rel="stylesheet" href="css Pages/payement.css">
+    <link rel="icon" href="image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <nav>   
+                <a href="index.html" class="logo">ÉléganceParfumée</a>
+                <ul class="navigation">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="produit.html">Collections</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="connexion.html" class="nav-icon" aria-label="Connexion"><i class="fas fa-user"></i></a>
+                    <a href="panier.html" class="nav-icon" aria-label="Panier">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <h1 class="section-title">Finaliser votre commande</h1>
+            
+            <div class="checkout-container">
+                <div class="checkout-form">
+                    <form id="payment-form">
+                        <div class="form-group">
+                            <h2 class="section-title">Informations de livraison</h2>
+                            
+                            <div class="form-row">
+                                <div class="form-col">
+                                    <label for="first-name">Prénom*</label>
+                                    <input type="text" id="first-name" required>
+                                </div>
+                                <div class="form-col">
+                                    <label for="last-name">Nom*</label>
+                                    <input type="text" id="last-name" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-col">
+                                    <label for="email">Email*</label>
+                                    <input type="email" id="email" required>
+                                </div>
+                                <div class="form-col">
+                                    <label for="phone">Téléphone*</label>
+                                    <input type="tel" id="phone" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-col">
+                                    <label for="address">Adresse*</label>
+                                    <input type="text" id="address" required>
+                                </div>
+                                <div class="form-col">
+                                    <label for="address2">Complément d'adresse</label>
+                                    <input type="text" id="address2">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-col">
+                                    <label for="city">Ville*</label>
+                                    <input type="text" id="city" required>
+                                </div>
+                                <div class="form-col">
+                                    <label for="postal-code">Code postal*</label>
+                                    <input type="text" id="postal-code" required>
+                                </div>
+                                <div class="form-col">
+    <label for="wilaya">Wilaya*</label>
+    <select id="wilaya" name="wilaya" required>
+        <option value="">-- Sélectionnez votre wilaya --</option>
+        <option value="01">Adrar</option>
+        <option value="02">Chlef</option>
+        <option value="03">Laghouat</option>
+        <option value="04">Oum El Bouaghi</option>
+        <option value="05">Batna</option>
+        <option value="06">Béjaïa</option>
+        <option value="07">Biskra</option>
+        <option value="08">Béchar</option>
+        <option value="09">Blida</option>
+        <option value="10">Bouira</option>
+        <option value="11">Tamanrasset</option>
+        <option value="12">Tébessa</option>
+        <option value="13">Tlemcen</option>
+        <option value="14">Tiaret</option>
+        <option value="15">Tizi Ouzou</option>
+        <option value="16">Alger</option>
+        <option value="17">Djelfa</option>
+        <option value="18">Jijel</option>
+        <option value="19">Sétif</option>
+        <option value="20">Saïda</option>
+        <option value="21">Skikda</option>
+        <option value="22">Sidi Bel Abbès</option>
+        <option value="23">Annaba</option>
+        <option value="24">Guelma</option>
+        <option value="25">Constantine</option>
+        <option value="26">Médéa</option>
+        <option value="27">Mostaganem</option>
+        <option value="28">M'Sila</option>
+        <option value="29">Mascara</option>
+        <option value="30">Ouargla</option>
+        <option value="31">Oran</option>
+        <option value="32">El Bayadh</option>
+        <option value="33">Illizi</option>
+        <option value="34">Bordj Bou Arreridj</option>
+        <option value="35">Boumerdès</option>
+        <option value="36">El Tarf</option>
+        <option value="37">Tindouf</option>
+        <option value="38">Tissemsilt</option>
+        <option value="39">El Oued</option>
+        <option value="40">Khenchela</option>
+        <option value="41">Souk Ahras</option>
+        <option value="42">Tipaza</option>
+        <option value="43">Mila</option>
+        <option value="44">Aïn Defla</option>
+        <option value="45">Naâma</option>
+        <option value="46">Aïn Témouchent</option>
+        <option value="47">Ghardaïa</option>
+        <option value="48">Relizane</option>
+        <option value="49">Timimoun</option>
+        <option value="50">Bordj Badji Mokhtar</option>
+        <option value="51">Ouled Djellal</option>
+        <option value="52">Béni Abbès</option>
+        <option value="53">In Salah</option>
+        <option value="54">In Guezzam</option>
+        <option value="55">Touggourt</option>
+        <option value="56">Djanet</option>
+        <option value="57">El M'Ghair</option>
+        <option value="58">El Meniaa</option>
+    </select>
+</div>
+
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <h2 class="section-title">Méthode de livraison</h2>
+                            
+                            <div class="payment-method active">
+                                <input type="radio" name="delivery" id="standard-delivery" checked>
+                                <label for="standard-delivery">Livraison standard (3-5 jours ouvrables) - 400DA</label>
+                                <span class="payment-icon"><i class="fas fa-truck"></i></span>
+                            </div>
+                            
+                            <div class="payment-method">
+                                <input type="radio" name="delivery" id="express-delivery">
+                                <label for="express-delivery">Livraison express (1-2 jours ouvrables) - 1000DA</label>
+                                <span class="payment-icon"><i class="fas fa-rocket"></i></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <h2 class="section-title">Méthode de paiement</h2>
+                            
+                            <div class="payment-methods">
+                                <div class="payment-method active">
+                                    <input type="radio" name="payment" id="credit-card" checked>
+                                    <label for="credit-card">Carte Edahabia</label>
+                                    <span class="payment-icon"><i class="far fa-credit-card"></i></span>
+                                </div>
+                                
+
+                            </div>
+                            
+                            <div id="credit-card-form" style="margin-top: 20px;">
+                                <div class="form-row">
+                                    <div class="form-col">
+                                        <label for="card-number">Numéro de carte*</label>
+                                        <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-col">
+                                        <label for="card-name">Nom sur la carte*</label>
+                                        <input type="text" id="card-name" placeholder="Jean Dupont" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-col">
+                                        <label for="card-expiry">Date d'expiration*</label>
+                                        <input type="text" id="card-expiry" placeholder="MM/AA" required>
+                                    </div>
+                                    <div class="form-col">
+                                        <label for="card-cvc">CVC*</label>
+                                        <input type="text" id="card-cvc" placeholder="123" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="order-summary">
+                    <h2 class="section-title">Votre commande</h2>
+                    
+                    <div class="cart-items" id="cart-items-container">
+                        
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span>Sous-total</span>
+                        <span class="price" id="subtotal">0.00DA</span>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span>Livraison</span>
+                        <span class="price" id="shipping">0.00DA</span>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span>Remise</span>
+                        <span class="price" id="discount">-0.00DA</span>
+                    </div>
+                    
+                    <div class="summary-row summary-total">
+                        <span>Total</span>
+                        <span class="price" id="total">0,00DA</span>
+                    </div>
+                    
+                    <button class="btn" id="complete-order">Finaliser la commande</button>
+                    
+                    <div class="secure-checkout">
+                        <i class="fas fa-lock"></i>
+                        <span>Paiement sécurisé</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ÉléganceParfumée</h3>
+                    <p>Maison de parfums de luxe depuis 2025</p>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>À propos</h3>
+                    <p>Élégance Parfumée : luxe, performance et expérience utilisateur optimisée.</p>
+                    <a href="apropos.html">En savoir plus</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>Bd Khaled Khodja, Tizi Ouzou</p>
+                    <p>Éléganceparfumée@gmail.coms</p>
+                    <p>+213 793 56 64 68</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Élégance Parfumée. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+   <script>
+    
+    function updateCartCount() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+        document.querySelector('.cart-count').textContent = totalItems;
+    }
+
+    
+    function displayCartItems() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const cartContainer = document.getElementById('cart-items-container');
+        const subtotalElement = document.getElementById('subtotal');
+        const shippingElement = document.getElementById('shipping');
+        const totalElement = document.getElementById('total');
+        
+        cartContainer.innerHTML = '';
+        
+        if (cart.length === 0) {
+            cartContainer.innerHTML = '<p>Votre panier est vide</p>';
+            subtotalElement.textContent = '0,00DA';
+            totalElement.textContent = '0,00DA';
+            document.getElementById('complete-order').disabled = true;
+            return;
+        }
+        
+        let subtotal = 0;
+        
+        cart.forEach(item => {
+            const itemElement = document.createElement('div');
+            itemElement.className = 'cart-item';
+            itemElement.innerHTML = `
+                <img src="${item.image}" alt="${item.name}" class="cart-item-img">
+                <div class="cart-item-details">
+                    <div class="cart-item-name">${item.name}</div>
+                    <div class="cart-item-price">${item.price.toFixed(2)}DA</div>
+                    <div class="cart-item-quantity">Quantité: ${item.quantity}</div>
+                </div>
+            `;
+            cartContainer.appendChild(itemElement);
+            subtotal += item.price * item.quantity;
+        });
+        
+        const shipping = 400; 
+        const total = subtotal + shipping;
+        
+        subtotalElement.textContent = subtotal.toFixed(2) + 'DA';
+        shippingElement.textContent = shipping.toFixed(2) + 'DA';
+        totalElement.textContent = total.toFixed(2) + 'DA';
+    }
+
+    
+    function validateForm() {
+        const requiredFields = ['first-name', 'last-name', 'email', 'phone', 'address', 'city', 'postal-code'];
+        let isValid = true;
+        
+        requiredFields.forEach(fieldId => {
+            const field = document.getElementById(fieldId);
+            if (!field.value.trim()) {
+                field.style.borderColor = 'red';
+                isValid = false;
+            } else {
+                field.style.borderColor = '#ddd';
+            }
+        });
+        
+        return isValid;
+    }
+
+    
+    document.getElementById('complete-order').addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        if (cart.length === 0) {
+            alert('Votre panier est vide');
+            return;
+        }
+        
+        if (!validateForm()) {
+            alert('Veuillez remplir tous les champs obligatoires');
+            return;
+        }
+        
+        
+        const orderData = {
+            firstName: document.getElementById('first-name').value,
+            lastName: document.getElementById('last-name').value,
+            email: document.getElementById('email').value,
+            address: document.getElementById('address').value,
+            total: document.getElementById('total').textContent
+        };
+        localStorage.setItem('orderData', JSON.stringify(orderData));
+        
+        
+        localStorage.removeItem('cart');
+        window.location.href = 'confirmation.html';
+    });
+
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        updateCartCount();
+        displayCartItems();
+    });
+</script>
+</body>
+</html>
